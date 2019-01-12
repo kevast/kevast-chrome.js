@@ -1,0 +1,44 @@
+{
+  "name": "kevast-chrome",
+  "version": "0.0.1",
+  "description": "Chrome storage for kevast.js",
+  "main": "dist/index.js",
+  "keywords": [
+    "kevast",
+    "key",
+    "value",
+    "key-value",
+    "storage",
+    "memory"
+  ],
+  "scripts": {
+    "lint": "tslint -p tsconfig.json",
+    "build": "yarn build:nodejs && yarn build:browser",
+    "build:browser": "webpack",
+    "build:nodejs": "tsc",
+    "clean": "rm -rf ./dist/*",
+    "prepublishOnly": "yarn build"
+  },
+  "files": [
+    "dist/**/*"
+  ],
+  "repository": "git@github.com:kevast/kevast-chrome.js.git",
+  "author": "Andie <zchangan@163.com>",
+  "license": "MIT",
+  "devDependencies": {
+    "@babel/core": "^7.2.2",
+    "@babel/plugin-transform-runtime": "^7.2.0",
+    "@babel/preset-env": "^7.2.3",
+    "@babel/preset-typescript": "^7.1.0",
+    "@babel/runtime": "^7.2.0",
+    "@types/chrome": "^0.0.77",
+    "@types/node": "^10.12.18",
+    "awesome-typescript-loader": "^5.2.1",
+    "babel-loader": "^8.0.5",
+    "kevast": "^0.2.4",
+    "tslint": "^5.12.1",
+    "typescript": "^3.2.2",
+    "webpack": "^4.28.4",
+    "webpack-cli": "^3.2.1"
+  }
+}
