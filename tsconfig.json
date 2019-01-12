@@ -1,0 +1,12 @@
+{
+  "compilerOptions": {
+    "outDir": "./dist",
+    "noImplicitAny": true,
+    "module": "CommonJS",
+    "declaration": true,
+    "target": "ES2015",
+    "strict": true
+  },
+  "include": ["./*.ts"],
+  "exclude": ["node_modules"]
+}
